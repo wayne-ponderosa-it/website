@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Ponderosa IT | Managed IT Services</title>
+
   <meta
     name="description"
     content="Ponderosa IT provides managed IT services for small businesses in Bend, Oregon."
@@ -18,6 +19,7 @@
       --text: #a4a198;
       --text-bright: #ddd9d1;
       --border: rgba(118, 150, 137, 0.32);
+      --footer: rgba(164, 161, 152, 0.34);
     }
 
     * {
@@ -38,80 +40,82 @@
           rgba(255, 255, 255, 0.025) 0%,
           rgba(255, 255, 255, 0) 45%
         ),
-        linear-gradient(180deg, var(--background) 0%, var(--background-dark) 100%);
+        linear-gradient(
+          180deg,
+          var(--background) 0%,
+          var(--background-dark) 100%
+        );
       color: var(--text);
       font-family: "Trebuchet MS", "Gill Sans", Arial, sans-serif;
-      display: flex;
-      justify-content: center;
     }
 
     .page {
       width: 100%;
       min-height: 100vh;
-      padding: 56px 24px 48px;
+      padding: 52px 24px 36px;
       text-align: center;
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
-.logo {
-    display: block;
-    width: min(625px, 90vw);
-    max-width: 625px;
-    height: auto;
-    margin: 0 auto;
-}
+    .logo {
+      display: block;
+      width: min(625px, 90vw);
+      max-width: 625px;
+      height: auto;
+      margin: 0 auto;
+    }
 
     .divider {
-      width: 80px;
+      width: 72px;
       height: 1px;
-      margin: 56px auto 51px;
+      margin: 49px auto 45px;
       background: var(--accent);
       opacity: 0.8;
     }
 
     .content {
-      width: min(690px, 100%);
+      width: min(640px, 100%);
     }
 
     h1 {
-      margin: 0 0 38px;
+      margin: 0 0 37px;
       color: var(--accent);
       font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(26px, 2.1vw, 36px);
+      font-size: 30px;
       font-weight: 400;
-      letter-spacing: 0.22em;
+      letter-spacing: 0.21em;
       line-height: 1.3;
       text-transform: uppercase;
     }
 
     .intro {
+      max-width: 620px;
       margin: 0 auto;
-      max-width: 680px;
-      font-size: clamp(18px, 1.35vw, 23px);
+      font-size: 18px;
       font-weight: 300;
-      line-height: 1.75;
+      line-height: 1.72;
       letter-spacing: 0.02em;
     }
 
     .contact {
-      margin-top: 48px;
+      margin-top: 45px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 23px;
+      gap: 21px;
     }
 
     .contact-link {
       color: var(--text-bright);
       text-decoration: none;
-      font-size: clamp(18px, 1.35vw, 23px);
+      font-size: 20px;
       font-weight: 600;
-      letter-spacing: 0.08em;
+      letter-spacing: 0.07em;
       display: inline-flex;
       align-items: center;
-      gap: 13px;
+      gap: 12px;
       transition:
         color 0.2s ease,
         opacity 0.2s ease;
@@ -123,9 +127,9 @@
     }
 
     .icon {
-      width: 21px;
-      height: 21px;
-      flex: 0 0 21px;
+      width: 19px;
+      height: 19px;
+      flex: 0 0 19px;
       stroke: currentColor;
       stroke-width: 1.6;
       fill: none;
@@ -133,60 +137,76 @@
     }
 
     .location {
-      margin-top: 43px;
-      padding: 12px 23px;
+      margin-top: 40px;
+      padding: 11px 21px;
       color: var(--text);
       border: 1px solid var(--border);
       border-radius: 2px;
-      font-size: 15px;
+      font-size: 14px;
       font-weight: 600;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.19em;
       text-transform: uppercase;
       display: inline-flex;
       align-items: center;
-      gap: 10px;
+      gap: 9px;
     }
 
     .location .icon {
-      width: 17px;
-      height: 17px;
-      flex-basis: 17px;
+      width: 16px;
+      height: 16px;
+      flex-basis: 16px;
+    }
+
+    footer {
+      margin-top: 27px;
+      color: var(--footer);
+      font-size: 13px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
     }
 
     @media (max-width: 700px) {
       .page {
-        padding: 34px 22px 40px;
+        padding: 34px 20px 35px;
       }
 
       .logo {
-        width: min(620px, 94vw);
+        width: min(625px, 94vw);
       }
 
       .divider {
-        margin-top: 44px;
-        margin-bottom: 38px;
+        margin-top: 40px;
+        margin-bottom: 35px;
       }
 
       h1 {
-        margin-bottom: 28px;
-        letter-spacing: 0.15em;
+        margin-bottom: 27px;
+        font-size: 24px;
+        letter-spacing: 0.14em;
       }
 
       .intro {
+        font-size: 17px;
         line-height: 1.65;
       }
 
       .contact {
-        margin-top: 38px;
+        margin-top: 36px;
         gap: 20px;
       }
 
       .contact-link {
+        font-size: 17px;
         letter-spacing: 0.04em;
       }
 
       .location {
-        margin-top: 34px;
+        margin-top: 32px;
+      }
+
+      footer {
+        margin-top: 24px;
+        font-size: 12px;
       }
     }
 
@@ -197,22 +217,22 @@
       }
 
       h1 {
-        font-size: 23px;
-        letter-spacing: 0.12em;
+        font-size: 22px;
+        letter-spacing: 0.11em;
       }
 
       .intro {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       .contact-link {
-        font-size: 17px;
+        font-size: 16px;
       }
 
       .location {
-        padding: 11px 17px;
+        padding: 10px 16px;
         font-size: 13px;
-        letter-spacing: 0.16em;
+        letter-spacing: 0.15em;
       }
     }
   </style>
@@ -230,6 +250,7 @@
     <div class="divider" aria-hidden="true"></div>
 
     <section class="content">
+
       <h1>Managed IT Services</h1>
 
       <p class="intro">
@@ -243,26 +264,39 @@
       <div class="contact">
 
         <a class="contact-link" href="tel:+15414201271">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M22 16.92v3a2 2 0 0 1-2.18 2
-                     19.79 19.79 0 0 1-8.63-3.07
-                     19.5 19.5 0 0 1-6-6
-                     19.79 19.79 0 0 1-3.07-8.67
-                     A2 2 0 0 1 4.11 2h3
-                     a2 2 0 0 1 2 1.72
-                     c.12.9.33 1.78.62 2.63
-                     a2 2 0 0 1-.45 2.11L8 9.73
-                     a16 16 0 0 0 6 6l1.27-1.27
-                     a2 2 0 0 1 2.11-.45
-                     c.85.29 1.73.5 2.63.62
-                     A2 2 0 0 1 22 16.92z"/>
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2
+                 19.79 19.79 0 0 1-8.63-3.07
+                 19.5 19.5 0 0 1-6-6
+                 19.79 19.79 0 0 1-3.07-8.67
+                 A2 2 0 0 1 4.11 2h3
+                 a2 2 0 0 1 2 1.72
+                 c.12.9.33 1.78.62 2.63
+                 a2 2 0 0 1-.45 2.11L8 9.73
+                 a16 16 0 0 0 6 6l1.27-1.27
+                 a2 2 0 0 1 2.11-.45
+                 c.85.29 1.73.5 2.63.62
+                 A2 2 0 0 1 22 16.92z"
+            />
           </svg>
 
           <span>(541) 420-1271</span>
         </a>
 
-        <a class="contact-link" href="mailto:wayne@ponderosait.com">
-          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
+        <a
+          class="contact-link"
+          href="mailto:wayne@ponderosait.com"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
             <rect x="3" y="5" width="18" height="14" rx="2"/>
             <path d="m3 7 9 6 9-6"/>
           </svg>
@@ -273,15 +307,26 @@
       </div>
 
       <div class="location">
-        <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
-          <path d="M20 10c0 5-8 12-8 12S4 15 4 10
-                   a8 8 0 1 1 16 0z"/>
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M20 10c0 5-8 12-8 12S4 15 4 10
+               a8 8 0 1 1 16 0z"
+          />
           <circle cx="12" cy="10" r="2.5"/>
         </svg>
 
         <span>Bend, Oregon</span>
       </div>
+
     </section>
+
+    <footer>
+      © 2026 Ponderosa IT, LLC
+    </footer>
 
   </main>
 </body>
