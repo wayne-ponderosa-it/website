@@ -73,34 +73,36 @@ main {
 /* Content Section */
 .content {
     width: 100%;
-    max-width: 700px;
+    max-width: 900px;
     text-align: center;
     padding: 0 20px;
 }
 
 .divider {
     width: 60px;
-    height: 1px;
+    height: 2px;
     background: #7fb3a0;
-    margin: 0 auto 40px;
+    margin: 0 auto 80px;
 }
 
 .section-title {
-    font-size: 32px;
+    font-size: 56px;
     font-weight: 300;
-    letter-spacing: 4px;
+    letter-spacing: 6px;
     color: #7fb3a0;
-    margin-bottom: 40px;
+    margin-bottom: 80px;
     text-transform: uppercase;
+    font-family: 'Georgia', serif;
 }
 
 .description {
-    font-size: 16px;
-    line-height: 1.8;
-    color: #888888;
+    font-size: 18px;
+    line-height: 2;
+    color: #b8b8b8;
     margin-bottom: 50px;
     font-weight: 300;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
+    font-family: 'Georgia', serif;
 }
 
 /* Contact Info */
@@ -180,13 +182,14 @@ main {
     }
 
     .section-title {
-        font-size: 24px;
-        letter-spacing: 2px;
-        margin-bottom: 30px;
+        font-size: 36px;
+        letter-spacing: 3px;
+        margin-bottom: 50px;
     }
 
     .description {
-        font-size: 14px;
+        font-size: 16px;
+        line-height: 1.8;
         margin-bottom: 40px;
     }
 
@@ -197,7 +200,7 @@ main {
 
     .divider {
         width: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 50px;
     }
 }
 
@@ -221,12 +224,13 @@ main {
     }
 
     .section-title {
-        font-size: 20px;
+        font-size: 24px;
         letter-spacing: 2px;
+        margin-bottom: 40px;
     }
 
     .description {
-        font-size: 13px;
+        font-size: 14px;
         margin-bottom: 30px;
         line-height: 1.7;
     }
