@@ -1,87 +1,81 @@
-# Ponderosa IT - Professional Website
+# Ponderosa IT - Managed IT Services
 
-A modern, elegant single-page website for Ponderosa IT services.
+A clean, minimal single-page website for Ponderosa IT Services in Bend, Oregon.
 
-## Design Features
+## Design
 
-- **Sophisticated Aesthetic**: Minimalist design with elegant serif typography
-- **Nature-Inspired Branding**: Pine tree logo integrated into navigation
-- **Professional Color Palette**: 
-  - Dark background (#0a0a0a)
-  - Forest green accent (#7fb3a0)
-  - Clean white and light gray
-- **Responsive Layout**: Seamlessly adapts to desktop, tablet, and mobile
-- **Smooth Interactions**: Elegant animations and transitions throughout
+This website features:
+- **Minimalist aesthetic** - Clean dark design with focus on content
+- **Centered layout** - Elegant vertical flow with professional spacing
+- **Pine tree logo** - SVG-based logo matching brand identity
+- **Contact information** - Phone, email, and location prominently displayed
+- **Fully responsive** - Works perfectly on all devices
 
 ## Sections
 
-1. **Navigation** - Sticky header with logo and smooth scroll links
-2. **Hero** - Bold introduction with call-to-action
-3. **About** - Company mission with key features
-4. **Services** - Six core service offerings
-5. **Contact** - Professional contact form
-6. **Footer** - Company info and quick links
+1. **Logo** - Centered Ponderosa IT logo with pine trees
+2. **Title** - "MANAGED IT SERVICES" section header
+3. **Description** - Company overview and services description
+4. **Contact Info** - Phone, email, and location
+5. **Footer** - Copyright information
 
-## File Structure
+## Colors
 
-- `index.html` - Main HTML structure
-- `styles.css` - Complete styling with responsive design
-- `script.js` - Interactive features and smooth scrolling
-- `README.md` - Documentation
+- Background: Dark gradient (#2a2a2a to #1a1a1a)
+- Accent: Forest green (#7fb3a0)
+- Text: Light gray (#a0a0a0 to #ffffff)
+- Logo background: Pure black (#000000)
 
-## Key Features
+## Files
 
-- Smooth scrolling navigation
-- Active navigation highlighting on scroll
-- Contact form with validation
-- Intersection Observer animations
-- Mobile-optimized layout
-- Accessible semantic HTML
+- `index.html` - HTML structure
+- `styles.css` - Complete styling
+- `script.js` - Interactive features
+- `README.md` - This file
 
-## Color Scheme
+## Features
 
-- Primary Dark: #0a0a0a (Black)
-- Accent Green: #7fb3a0 (Forest Green)
-- Light Green: #a8c5ba
-- Text: #1a1a1a / #f5f5f5
-- Gray: #888888
+- Responsive design for all devices
+- Clickable phone and email links
+- Smooth scrolling
+- Dark mode optimized
+- Fast loading minimal design
 
 ## Customization
 
-### Update Logo
-Replace the SVG pine trees in `index.html` or use an image asset.
+### Update Company Info
+Edit the contact details in `index.html`:
+- Phone number
+- Email address
+- Location
+- Description text
 
-### Update Content
-Edit text directly in `index.html`:
-- Company description
-- Service offerings
-- Contact information
+### Update Logo
+The logo is an SVG. You can:
+1. Replace the SVG code in `index.html`
+2. Use an image file instead
+3. Adjust the colors in `styles.css` (--accent-green)
 
 ### Modify Colors
-Edit CSS variables in `styles.css`:
+Edit the color values in `styles.css`:
 ```css
-:root {
-    --primary-dark: #0a0a0a;
-    --accent-green: #7fb3a0;
-    /* ... */
-}
+--accent-green: #7fb3a0;  /* Change this */
 ```
 
 ## Browser Support
 
-- Chrome/Edge (latest)
-- Firefox (latest)
-- Safari (latest)
-- Mobile browsers
+- All modern browsers
+- Mobile browsers (iOS Safari, Chrome Android)
+- Desktop browsers (Chrome, Firefox, Safari, Edge)
 
 ## Deployment
 
-1. Push files to GitHub
-2. Enable GitHub Pages in repository settings
-3. Website will be available at `https://wayne-ponderosa-it.github.io/website`
+Deploy to GitHub Pages or any static hosting:
 
-Or deploy to any static hosting service (Netlify, Vercel, etc.)
+1. Push files to GitHub repository
+2. Enable GitHub Pages in settings
+3. Your site is live!
 
-## License
+## Copyright
 
-All rights reserved - Ponderosa IT
+© 2026 Ponderosa IT, LLC - All rights reserved
