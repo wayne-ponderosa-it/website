@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
-  
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -16,10 +11,13 @@
     content="Ponderosa IT provides managed IT services for small businesses in Bend, Oregon."
   >
 
-  <!-- Jost Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Jost:wght@300;400;500;600&display=swap"
+    rel="stylesheet"
+  >
 
   <style>
     :root {
@@ -28,27 +26,31 @@
       --accent: #769689;
       --text: #a4a198;
       --text-bright: #ddd9d1;
-      --border: rgba(118, 150, 137, 0.32);
+      --border: rgba(118, 150, 137, 0.28);
       --footer: rgba(164, 161, 152, 0.34);
     }
 
-    * {
+    *,
+    *::before,
+    *::after {
       box-sizing: border-box;
+      margin: 0;
+      padding: 0;
     }
 
     html,
     body {
-      margin: 0;
       min-height: 100%;
     }
 
     body {
       min-height: 100vh;
+
       background:
         radial-gradient(
           circle at center,
-          rgba(255,255,255,.025) 0%,
-          rgba(255,255,255,0) 45%
+          rgba(255, 255, 255, 0.025) 0%,
+          rgba(255, 255, 255, 0) 45%
         ),
         linear-gradient(
           180deg,
@@ -60,9 +62,7 @@
 
       font-family: "Jost", sans-serif;
       font-weight: 300;
-      font-size: 18px;
-      line-height: 1.7;
-      letter-spacing: .03em;
+      letter-spacing: 0.03em;
 
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
@@ -72,75 +72,92 @@
     .page {
       width: 100%;
       min-height: 100vh;
-      padding: 52px 24px 36px;
-      text-align: center;
+
+      padding: 38px 24px 26px;
+
       display: flex;
       flex-direction: column;
       align-items: center;
+
+      text-align: center;
     }
 
     .logo {
       display: block;
-      width: min(560px, 90vw);
+
+      width: min(560px, 84vw);
       max-width: 560px;
       height: auto;
+
       margin: 0 auto;
     }
 
     .divider {
-      width: 72px;
+      width: 64px;
       height: 1px;
-      margin: 49px auto 45px;
+
+      margin: 42px auto 38px;
+
       background: var(--accent);
-      opacity: .8;
+      opacity: 0.72;
     }
 
     .content {
-      width: min(640px,100%);
+      width: min(640px, 100%);
     }
 
-   h1 {
-  margin: 0 0 2rem;
+    h1 {
+      margin-bottom: 2rem;
 
-  font-family: "Cormorant Garamond", serif;
-  font-size: clamp(1.35rem, 3.2vw, 1.9rem);
-  font-weight: 300;
-  letter-spacing: 0.12em;
-  line-height: 1.2;
-  text-transform: uppercase;
+      color: var(--accent);
 
-  color: var(--accent);
-}
-   .intro {
-  max-width: 540px;
-  margin: 0 auto 2.8rem;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.65rem, 2.5vw, 2rem);
+      font-weight: 300;
+      line-height: 1.2;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
 
-  font-family: "Jost", sans-serif;
-  font-size: clamp(0.92rem, 1.8vw, 1.05rem);
-  font-weight: 300;
-  line-height: 1.85;
-  letter-spacing: 0.03em;
+    .intro {
+      max-width: 540px;
+      margin: 0 auto 2.8rem;
 
-  color: var(--text);
-}
+      color: var(--text);
+
+      font-family: "Jost", sans-serif;
+      font-size: clamp(0.92rem, 1.25vw, 1.05rem);
+      font-weight: 300;
+      line-height: 1.85;
+      letter-spacing: 0.03em;
+    }
+
     .contact {
-      margin-top: 45px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 21px;
+      gap: 16px;
+
+      margin-top: 0;
     }
 
     .contact-link {
-      color: var(--text-bright);
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 500;
-      letter-spacing: .06em;
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      transition: color .2s ease, opacity .2s ease;
+      justify-content: center;
+      gap: 11px;
+
+      color: var(--text-bright);
+      text-decoration: none;
+
+      font-size: 1.05rem;
+      font-weight: 500;
+      line-height: 1.3;
+      letter-spacing: 0.055em;
+
+      transition:
+        color 0.2s ease,
+        opacity 0.2s ease;
     }
 
     .contact-link:hover,
@@ -148,132 +165,165 @@
       color: var(--accent);
     }
 
-    .icon {
-      width: 19px;
-      height: 19px;
-      flex: 0 0 19px;
+    .contact-link .icon {
+      width: 17px;
+      height: 17px;
+      flex: 0 0 17px;
+
+      fill: none;
       stroke: currentColor;
       stroke-width: 1.6;
-      fill: none;
-      opacity: .72;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+
+      opacity: 0.58;
     }
 
-.location {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
+    .location {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
 
-  margin-top: 42px;
-  padding: 14px 34px;
+      margin-top: 39px;
+      padding: 10px 20px;
 
-  border: 1px solid rgba(118, 150, 137, 0.28);
-  border-radius: 2px;
-  background: rgba(255,255,255,0.015);
+      border: 1px solid var(--border);
+      border-radius: 2px;
 
-  color: var(--text-bright);
+      background: rgba(255, 255, 255, 0.01);
 
-  font-family: "Jost", sans-serif;
-  font-size: 0.95rem;
-  font-weight: 400;
-  letter-spacing: 0.20em;
-  text-transform: uppercase;
+      color: var(--text);
 
-  transition: border-color .2s ease;
-}
-
-    .location .icon {
-      width: 16px;
-      height: 16px;
-      flex-basis: 16px;
-    }
-
-    footer {
-      margin-top: 27px;
-      color: var(--footer);
-      font-size: 13px;
+      font-family: "Jost", sans-serif;
+      font-size: 0.78rem;
       font-weight: 400;
-      letter-spacing: .08em;
+      line-height: 1;
+      letter-spacing: 0.17em;
       text-transform: uppercase;
     }
 
-    @media (max-width:700px){
+    .location .icon {
+      width: 14px;
+      height: 14px;
+      flex: 0 0 14px;
 
-      .page{
-        padding:34px 20px 35px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+
+      opacity: 0.52;
+    }
+
+    footer {
+      margin-top: 24px;
+
+      color: var(--footer);
+
+      font-family: "Jost", sans-serif;
+      font-size: 0.72rem;
+      font-weight: 400;
+      line-height: 1.3;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 700px) {
+      .page {
+        padding: 30px 20px 28px;
       }
 
-      .logo{
-        width:min(625px,94vw);
+      .logo {
+        width: min(560px, 94vw);
       }
 
-      .divider{
-        margin-top:40px;
-        margin-bottom:35px;
+      .divider {
+        margin-top: 36px;
+        margin-bottom: 32px;
       }
 
-      h1{
-        margin-bottom:27px;
-        font-size:24px;
-        letter-spacing:.14em;
+      h1 {
+        margin-bottom: 1.7rem;
+        font-size: 1.55rem;
+        letter-spacing: 0.11em;
       }
 
-      .intro{
-        font-size:18px;
-        line-height:1.7;
+      .intro {
+        max-width: 520px;
+        margin-bottom: 2.35rem;
+        font-size: 0.98rem;
+        line-height: 1.78;
       }
 
-      .contact{
-        margin-top:36px;
-        gap:20px;
+      .contact {
+        gap: 15px;
       }
 
-      .contact-link{
-        font-size:18px;
+      .contact-link {
+        font-size: 1rem;
       }
 
-      .location{
-        margin-top:32px;
+      .location {
+        margin-top: 34px;
       }
 
-      footer{
-        margin-top:24px;
-        font-size:12px;
+      footer {
+        margin-top: 22px;
       }
     }
 
-    @media (max-width:420px){
-
-      .page{
-        padding-left:18px;
-        padding-right:18px;
+    @media (max-width: 420px) {
+      .page {
+        padding-left: 18px;
+        padding-right: 18px;
       }
 
-      h1{
-        font-size:22px;
-        letter-spacing:.11em;
+      .logo {
+        width: 94vw;
       }
 
-      .intro{
-        font-size:17px;
+      .divider {
+        width: 56px;
       }
 
-      .contact-link{
-        font-size:17px;
+      h1 {
+        font-size: 1.4rem;
+        letter-spacing: 0.095em;
       }
 
-      .location{
-        padding:10px 16px;
-        font-size:13px;
-        letter-spacing:.15em;
+      .intro {
+        font-size: 0.94rem;
+        line-height: 1.75;
+      }
+
+      .contact-link {
+        gap: 9px;
+        font-size: 0.95rem;
+        letter-spacing: 0.04em;
+      }
+
+      .contact-link .icon {
+        width: 16px;
+        height: 16px;
+        flex-basis: 16px;
+      }
+
+      .location {
+        padding: 10px 16px;
+        font-size: 0.72rem;
+        letter-spacing: 0.15em;
+      }
+
+      footer {
+        font-size: 0.68rem;
       }
     }
-
   </style>
 </head>
 
 <body>
-
   <main class="page">
 
     <img
@@ -291,27 +341,84 @@
       <p class="intro">
         Ponderosa IT is a locally owned managed services provider based in
         Bend, Oregon. With over a decade of hands-on IT experience, we keep
-        small businesses running securely and reliably—handling everything
+        small businesses running securely and reliably — handling everything
         from endpoint management and cybersecurity to Microsoft 365 and
         network infrastructure, so you can focus on what you do best.
       </p>
 
       <div class="contact">
 
-        <a class="contact-link" href="tel:+15414201271">
-          <!-- Your existing phone SVG -->
+        <a
+          class="contact-link"
+          href="tel:+15414201271"
+          aria-label="Call Ponderosa IT at 541-420-1271"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 0 1-2.18 2
+                 19.79 19.79 0 0 1-8.63-3.07
+                 19.5 19.5 0 0 1-6-6
+                 19.79 19.79 0 0 1-3.07-8.67
+                 A2 2 0 0 1 4.11 2h3
+                 a2 2 0 0 1 2 1.72
+                 c.12.9.33 1.78.62 2.63
+                 a2 2 0 0 1-.45 2.11L8 9.73
+                 a16 16 0 0 0 6 6l1.27-1.27
+                 a2 2 0 0 1 2.11-.45
+                 c.85.29 1.73.5 2.63.62
+                 A2 2 0 0 1 22 16.92z"
+            />
+          </svg>
+
           <span>(541) 420-1271</span>
         </a>
 
-        <a class="contact-link" href="mailto:wayne@ponderosait.com">
-          <!-- Your existing email SVG -->
+        <a
+          class="contact-link"
+          href="mailto:wayne@ponderosait.com"
+          aria-label="Email wayne@ponderosait.com"
+        >
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+            />
+            <path d="m3 7 9 6 9-6"/>
+          </svg>
+
           <span>wayne@ponderosait.com</span>
         </a>
 
       </div>
 
       <div class="location">
-        <!-- Your existing location SVG -->
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M20 10c0 5-8 12-8 12S4 15 4 10
+               a8 8 0 1 1 16 0z"
+          />
+          <circle
+            cx="12"
+            cy="10"
+            r="2.5"
+          />
+        </svg>
+
         <span>Bend, Oregon</span>
       </div>
 
@@ -322,6 +429,5 @@
     </footer>
 
   </main>
-
 </body>
 </html>
