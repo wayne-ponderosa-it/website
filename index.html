@@ -43,38 +43,39 @@
       min-height: 100%;
     }
 
-body {
-  min-height: 100vh;
+    body {
+      min-height: 100vh;
 
-  background:
-    radial-gradient(
-      ellipse at 50% 48%,
-      rgba(255, 255, 255, 0.035) 0%,
-      rgba(255, 255, 255, 0.018) 38%,
-      rgba(255, 255, 255, 0) 72%
-    ),
-    linear-gradient(
-      180deg,
-      #23241f 0%,
-      #292a24 52%,
-      #21221e 100%
-    );
+      background:
+        radial-gradient(
+          ellipse at 50% 48%,
+          rgba(255, 255, 255, 0.035) 0%,
+          rgba(255, 255, 255, 0.018) 38%,
+          rgba(255, 255, 255, 0) 72%
+        ),
+        linear-gradient(
+          180deg,
+          #23241f 0%,
+          #292a24 52%,
+          #21221e 100%
+        );
 
-  color: var(--text);
-  font-family: "Jost", sans-serif;
-  font-weight: 300;
-  letter-spacing: 0.03em;
+      color: var(--text);
 
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-}
+      font-family: "Jost", sans-serif;
+      font-weight: 300;
+      letter-spacing: 0.03em;
+
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
 
     .page {
       width: 100%;
       min-height: 100vh;
 
-      padding: 38px 24px 26px;
+      padding: 26px 24px 26px;
 
       display: flex;
       flex-direction: column;
@@ -83,20 +84,39 @@ body {
       text-align: center;
     }
 
-.logo {
-  display: block;
-  width: min(560px, 84vw);
-  max-width: 560px;
-  height: auto;
-  margin: 0 auto;
-  box-shadow: none;
-}
+    .card {
+      width: min(720px, 100%);
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .logo-wrap {
+      width: 100%;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .logo {
+      display: block;
+
+      width: min(560px, 84vw);
+      max-width: 560px;
+      height: auto;
+
+      margin: 0 auto;
+
+      box-shadow: none;
+    }
 
     .divider {
       width: 64px;
       height: 1px;
 
-      margin: 42px auto 38px;
+      margin: 36px auto 34px;
 
       background: var(--accent);
       opacity: 0.72;
@@ -107,12 +127,12 @@ body {
     }
 
     h1 {
-      margin-bottom: 2rem;
+      margin: 0 0 1.75rem;
 
       color: var(--accent);
 
       font-family: "Cormorant Garamond", serif;
-      font-size: clamp(1.65rem, 2.5vw, 2rem);
+      font-size: clamp(1.35rem, 3.2vw, 1.9rem);
       font-weight: 300;
       line-height: 1.2;
       letter-spacing: 0.12em;
@@ -121,12 +141,12 @@ body {
 
     .intro {
       max-width: 540px;
-      margin: 0 auto 2.8rem;
+      margin: 0 auto 2.45rem;
 
       color: var(--text);
 
       font-family: "Jost", sans-serif;
-      font-size: clamp(0.92rem, 1.25vw, 1.05rem);
+      font-size: clamp(0.92rem, 1.8vw, 1.05rem);
       font-weight: 300;
       line-height: 1.85;
       letter-spacing: 0.03em;
@@ -136,7 +156,7 @@ body {
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 16px;
+      gap: 13px;
 
       margin-top: 0;
     }
@@ -150,6 +170,7 @@ body {
       color: var(--text-bright);
       text-decoration: none;
 
+      font-family: "Jost", sans-serif;
       font-size: 1.05rem;
       font-weight: 500;
       line-height: 1.3;
@@ -185,7 +206,7 @@ body {
       justify-content: center;
       gap: 9px;
 
-      margin-top: 39px;
+      margin-top: 32px;
       padding: 10px 20px;
 
       border: 1px solid var(--border);
@@ -218,7 +239,7 @@ body {
     }
 
     footer {
-      margin-top: 24px;
+      margin-top: 18px;
 
       color: var(--footer);
 
@@ -232,7 +253,7 @@ body {
 
     @media (max-width: 700px) {
       .page {
-        padding: 30px 20px 28px;
+        padding: 28px 20px 28px;
       }
 
       .logo {
@@ -240,25 +261,27 @@ body {
       }
 
       .divider {
-        margin-top: 36px;
-        margin-bottom: 32px;
+        margin-top: 34px;
+        margin-bottom: 30px;
       }
 
       h1 {
-        margin-bottom: 1.7rem;
-        font-size: 1.55rem;
+        margin-bottom: 1.6rem;
+
+        font-size: 1.5rem;
         letter-spacing: 0.11em;
       }
 
       .intro {
         max-width: 520px;
-        margin-bottom: 2.35rem;
+        margin-bottom: 2.2rem;
+
         font-size: 0.98rem;
         line-height: 1.78;
       }
 
       .contact {
-        gap: 15px;
+        gap: 13px;
       }
 
       .contact-link {
@@ -266,11 +289,11 @@ body {
       }
 
       .location {
-        margin-top: 34px;
+        margin-top: 30px;
       }
 
       footer {
-        margin-top: 22px;
+        margin-top: 18px;
       }
     }
 
@@ -289,7 +312,7 @@ body {
       }
 
       h1 {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
         letter-spacing: 0.095em;
       }
 
@@ -300,6 +323,7 @@ body {
 
       .contact-link {
         gap: 9px;
+
         font-size: 0.95rem;
         letter-spacing: 0.04em;
       }
@@ -312,6 +336,7 @@ body {
 
       .location {
         padding: 10px 16px;
+
         font-size: 0.72rem;
         letter-spacing: 0.15em;
       }
@@ -320,125 +345,124 @@ body {
         font-size: 0.68rem;
       }
     }
-
-.page {
-  padding-top: 26px;
-}
-
-h1 {
-  font-size: clamp(1.35rem, 3.2vw, 1.9rem);
-}
-
-.location {
-  margin-top: 59px;
-}
   </style>
 </head>
 
 <body>
   <main class="page">
 
-    <img
-      class="logo"
-      src="logo.png"
-      alt="Ponderosa IT"
-    >
+    <div class="card">
 
-    <div class="divider" aria-hidden="true"></div>
-
-    <section class="content">
-
-      <h1>Managed IT Services</h1>
-
-      <p class="intro">
-        Ponderosa IT is a locally owned managed services provider based in
-        Bend, Oregon. With over a decade of hands-on IT experience, we keep
-        small businesses running securely and reliably — handling everything
-        from endpoint management and cybersecurity to Microsoft 365 and
-        network infrastructure, so you can focus on what you do best.
-      </p>
-
-      <div class="contact">
-
-        <a
-          class="contact-link"
-          href="tel:+15414201271"
-          aria-label="Call Ponderosa IT at 541-420-1271"
+      <div class="logo-wrap">
+        <img
+          class="logo"
+          src="logo.png"
+          alt="Ponderosa IT"
         >
+      </div>
+
+      <div
+        class="divider"
+        aria-hidden="true"
+      ></div>
+
+      <section class="content">
+
+        <h1>Managed IT Services</h1>
+
+        <p class="intro">
+          Ponderosa IT is a locally owned managed services provider based in
+          Bend, Oregon. With over a decade of hands-on IT experience, we keep
+          small businesses running securely and reliably — handling everything
+          from endpoint management and cybersecurity to Microsoft 365 and
+          network infrastructure, so you can focus on what you do best.
+        </p>
+
+        <div class="contact">
+
+          <a
+            class="contact-link"
+            href="tel:+15414201271"
+            aria-label="Call Ponderosa IT at 541-420-1271"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2
+                   19.79 19.79 0 0 1-8.63-3.07
+                   19.5 19.5 0 0 1-6-6
+                   19.79 19.79 0 0 1-3.07-8.67
+                   A2 2 0 0 1 4.11 2h3
+                   a2 2 0 0 1 2 1.72
+                   c.12.9.33 1.78.62 2.63
+                   a2 2 0 0 1-.45 2.11L8 9.73
+                   a16 16 0 0 0 6 6l1.27-1.27
+                   a2 2 0 0 1 2.11-.45
+                   c.85.29 1.73.5 2.63.62
+                   A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+
+            <span>(541) 420-1271</span>
+          </a>
+
+          <a
+            class="contact-link"
+            href="mailto:wayne@ponderosait.com"
+            aria-label="Email wayne@ponderosait.com"
+          >
+            <svg
+              class="icon"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <rect
+                x="3"
+                y="5"
+                width="18"
+                height="14"
+                rx="2"
+              />
+
+              <path d="m3 7 9 6 9-6"/>
+            </svg>
+
+            <span>wayne@ponderosait.com</span>
+          </a>
+
+        </div>
+
+        <div class="location">
           <svg
             class="icon"
             viewBox="0 0 24 24"
             aria-hidden="true"
           >
             <path
-              d="M22 16.92v3a2 2 0 0 1-2.18 2
-                 19.79 19.79 0 0 1-8.63-3.07
-                 19.5 19.5 0 0 1-6-6
-                 19.79 19.79 0 0 1-3.07-8.67
-                 A2 2 0 0 1 4.11 2h3
-                 a2 2 0 0 1 2 1.72
-                 c.12.9.33 1.78.62 2.63
-                 a2 2 0 0 1-.45 2.11L8 9.73
-                 a16 16 0 0 0 6 6l1.27-1.27
-                 a2 2 0 0 1 2.11-.45
-                 c.85.29 1.73.5 2.63.62
-                 A2 2 0 0 1 22 16.92z"
+              d="M20 10c0 5-8 12-8 12S4 15 4 10
+                 a8 8 0 1 1 16 0z"
+            />
+
+            <circle
+              cx="12"
+              cy="10"
+              r="2.5"
             />
           </svg>
 
-          <span>(541) 420-1271</span>
-        </a>
+          <span>Bend, Oregon</span>
+        </div>
 
-        <a
-          class="contact-link"
-          href="mailto:wayne@ponderosait.com"
-          aria-label="Email wayne@ponderosait.com"
-        >
-          <svg
-            class="icon"
-            viewBox="0 0 24 24"
-            aria-hidden="true"
-          >
-            <rect
-              x="3"
-              y="5"
-              width="18"
-              height="14"
-              rx="2"
-            />
-            <path d="m3 7 9 6 9-6"/>
-          </svg>
+      </section>
 
-          <span>wayne@ponderosait.com</span>
-        </a>
+      <footer>
+        © 2026 Ponderosa IT, LLC
+      </footer>
 
-      </div>
-
-      <div class="location">
-        <svg
-          class="icon"
-          viewBox="0 0 24 24"
-          aria-hidden="true"
-        >
-          <path
-            d="M20 10c0 5-8 12-8 12S4 15 4 10
-               a8 8 0 1 1 16 0z"
-          />
-          <circle
-            cx="12"
-            cy="10"
-            r="2.5"
-          />
-        </svg>
-
-        <span>Bend, Oregon</span>
-      </div>
-
-    </section>
-
-    <footer>
-      © 2026 Ponderosa IT, LLC
-    </footer>
+    </div>
 
   </main>
 </body>
