@@ -158,20 +158,29 @@
       opacity: .72;
     }
 
-    .location {
-      margin-top: 40px;
-      padding: 11px 21px;
-      color: var(--text);
-      border: 1px solid var(--border);
-      border-radius: 2px;
-      font-size: 14px;
-      font-weight: 500;
-      letter-spacing: .19em;
-      text-transform: uppercase;
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-    }
+.location {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  margin-top: 42px;
+  padding: 14px 34px;
+
+  border: 1px solid rgba(118, 150, 137, 0.28);
+  border-radius: 2px;
+  background: rgba(255,255,255,0.015);
+
+  color: var(--text-bright);
+
+  font-family: "Jost", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.20em;
+  text-transform: uppercase;
+
+  transition: border-color .2s ease;
+}
 
     .location .icon {
       width: 16px;
